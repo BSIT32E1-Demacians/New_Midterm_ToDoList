@@ -1,5 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ToDo.Domain
 {
@@ -7,20 +6,9 @@ namespace ToDo.Domain
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Please enter a description.")]
-        public string Description { get; set; } = string.Empty;
+        public string Description { get; set; }
 
-        [Required(ErrorMessage = "Please enter a due date.")]
-        public DateTime? DueDate { get; set; }
-
-        [Required(ErrorMessage = "Please select a category.")]
-        public string CategoryId { get; set; } = string.Empty;
-
-        public Category Category { get; set; } = null!;
-
-        [Required(ErrorMessage = "Please select a status.")]
-
-        public string Status { get; set; } = string.Empty;
+        public string Category { get; set; } 
 
         public bool Done { get; set; } = false;
     }
