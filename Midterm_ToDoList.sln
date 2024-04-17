@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Midterm_ToDoList", "Midterm_ToDoList\Midterm_ToDoList.csproj", "{FD21DF7F-1CF5-4237-85A4-4318B8932CF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Domain", "ToDo.Domain\ToDo.Domain.csproj", "{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Domain", "ToDo.Domain\ToDo.Domain.csproj", "{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Repository", "ToDo.Repository\ToDo.Repository.csproj", "{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
