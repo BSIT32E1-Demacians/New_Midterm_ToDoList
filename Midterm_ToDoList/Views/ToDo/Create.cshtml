@@ -4,6 +4,29 @@
     ViewBag.Title = "Create";
 }
 
+<style>
+    checkbox input[type="checkbox"] {
+        transform: scale(2);
+        margin-right: 15px;
+    }
+
+    .btn-default {
+        background-color: #007bff; 
+        color: #fff; 
+        padding: 10px 20px; 
+        font-size: 16px; 
+        border: none; 
+        border-radius: 4px; 
+        cursor: pointer; 
+    }
+
+        
+        .btn-default:hover {
+            background-color: #377081;
+        }
+
+</style>
+
 <h2>Create</h2>
 
 @using (Html.BeginForm())
@@ -30,7 +53,7 @@
                 @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
             </div>
         </div>
-
+        <br />
         <!-- Add the Done field if needed -->
 
         <div class="form-group">
@@ -40,7 +63,7 @@
         </div>
     </div>
 }
-
+<br />
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
