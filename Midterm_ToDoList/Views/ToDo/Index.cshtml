@@ -31,8 +31,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Category)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Done)
+            <td class="done-column">
+                @if (item.Done)
+                {
+                    <span class="check-mark">&#10003;</span>
+                }
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
