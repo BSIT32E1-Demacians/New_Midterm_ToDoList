@@ -3,11 +3,12 @@ using ToDo.Domain;
 using System;
 using ToDo.Repository;
 using ToDo.Services;
+using Midterm_ToDoList.Models;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-//builder.Services.AddDbContext<AppDbContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//builder.Services.AddDbContext<NAppDbContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
     options.UseSqlServer("Server=DESKTOP-TAHDD9J\\SQLEXPRESS01;Database=dbToDO;Trusted_Connection=True;TrustServerCertificate=True");// <----- Put connection String Here
