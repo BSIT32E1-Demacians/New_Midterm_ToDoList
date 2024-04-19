@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 namespace Midterm_ToDoList.Models
 {
-    public class AppDbContext: DbContext
+    public class NAppDbContext: DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
+        public NAppDbContext(DbContextOptions<NAppDbContext> options) : base(options) { }
         public DbSet<NToDo> NToDo { get; set; } = null!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
