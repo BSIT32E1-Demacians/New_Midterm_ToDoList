@@ -8,9 +8,9 @@ public class ToDoController : Controller
 {
     private readonly ToDoService _toDoService;
 
-    public ToDoController()
+    public ToDoController(ToDoService toDoService)
     {
-        _toDoService = new ToDoService(new ToDoRepository());
+        _toDoService = toDoService;
     }
 
     public ActionResult Index()
