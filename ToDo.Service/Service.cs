@@ -5,11 +5,11 @@ using Repository;
 
 namespace Service
 {
-    public class TodoService
+    public class ToDoService
     {
         private readonly ToDoRepository _repository;
 
-        public TodoService(ToDoRepository repository)
+        public ToDoService(ToDoRepository repository)
         {
             _repository = repository;
         }
