@@ -5,11 +5,11 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Midterm_ToDoList", "Midterm_ToDoList\Midterm_ToDoList.csproj", "{FD21DF7F-1CF5-4237-85A4-4318B8932CF7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Domain", "ToDo.Domain\ToDo.Domain.csproj", "{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "ToDo.Domain\Domain.csproj", "{4659A697-2406-429E-BF6B-3B3A4CC3A3B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Repository", "ToDo.Repository\ToDo.Repository.csproj", "{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "ToDo.Repository\Repository.csproj", "{978D6FA3-167E-4EDF-8043-89D4B2C3B28E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo.Service", "ToDo.Service\ToDo.Service.csproj", "{7677324A-6823-4AA4-84F0-49BE1EAE2539}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "ToDo.Service\Service.csproj", "{7677324A-6823-4AA4-84F0-49BE1EAE2539}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

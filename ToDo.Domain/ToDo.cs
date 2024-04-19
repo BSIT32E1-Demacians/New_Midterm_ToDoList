@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ToDo.Domain
+namespace Domain
 {
     public class ToDo
     {
