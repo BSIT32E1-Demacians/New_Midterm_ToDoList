@@ -28,6 +28,11 @@ public class ToDoController : Controller
     [HttpPost]
     public ActionResult Create(ToDo todo)
     {
+        if (string.IsNullOrWhiteSpace(todo.Description) || string.IsNullOrWhiteSpace(todo.Category))
+        {
+            ModelState.AddModelError("", "Fields must not be empty");
+            return View(todo);
+        }
         _toDoService.Create(todo);
         return RedirectToAction("Index");
     }
@@ -42,6 +47,11 @@ public class ToDoController : Controller
     [HttpPost]
     public ActionResult Edit(ToDo todo)
     {
+        if (string.IsNullOrWhiteSpace(todo.Description) || string.IsNullOrWhiteSpace(todo.Category))
+        {
+            ModelState.AddModelError("", "Fields must not be empty");
+            return View(todo);
+        }
         _toDoService.Update(todo);
         return RedirectToAction("Index");
     }

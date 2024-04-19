@@ -16,10 +16,6 @@ namespace Service
 
         public ToDo Create(ToDo todo)
         {
-            if (string.IsNullOrWhiteSpace(todo.Description))
-            {
-                throw new ArgumentException("Description cannot be empty");
-            }
             return _repository.Create(todo);
         }
 
