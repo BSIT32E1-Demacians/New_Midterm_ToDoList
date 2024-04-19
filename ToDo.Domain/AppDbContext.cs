@@ -12,7 +12,7 @@ namespace Domain
     {
         public DbSet<ToDo> ToDoSet { get; set; }
 
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public AppDbContext(DbContextOptions options) : base(options)
         {
         }
     }
