@@ -7,9 +7,9 @@ namespace ToDo.Services
 {
     public class ToDoService : IToDoService
     {
-        private readonly ToDoRepository _repository;
+        private readonly IToDoService _repository;
 
-        public ToDoService(ToDoRepository repository)
+        public ToDoService(IToDoService repository)
         {
             _repository = repository;
         }
