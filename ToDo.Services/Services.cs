@@ -5,7 +5,7 @@ using ToDo.Repository;
 
 namespace ToDo.Services
 {
-    public class ToDoService
+    public class ToDoService : IToDoService
     {
         private readonly ToDoRepository _repository;
 
