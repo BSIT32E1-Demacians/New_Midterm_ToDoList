@@ -15,8 +15,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase(databaseName: "InMemoryDb"));
-builder.Services.AddSingleton<ToDoRepository>();
-builder.Services.AddScoped<ToDoService>();
+builder.Services.AddSingleton<IToDoRepository, ToDoRepository>();
+builder.Services.AddScoped<IToDoService, ToDoService>();
 builder.Services.AddScoped<ToDoController>();
 var app = builder.Build();
 

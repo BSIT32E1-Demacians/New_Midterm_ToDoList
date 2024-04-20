@@ -5,11 +5,11 @@ using ToDo.Repository;
 
 namespace ToDo.Services
 {
-    public class ToDoService
+    public class ToDoService : IToDoService
     {
-        private readonly ToDoRepository _repository;
+        private readonly IToDoRepository _repository;
 
-        public ToDoService(ToDoRepository repository)
+        public ToDoService(IToDoRepository repository)
         {
             _repository = repository;
         }
