@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 public class ToDoController : Controller
 {
-    private readonly ToDoService _toDoService;
+    private readonly IToDoService _toDoService;
 
-    public ToDoController(ToDoService toDoService)
+    public ToDoController(IToDoService toDoService)
     {
         _toDoService = toDoService;
     }
