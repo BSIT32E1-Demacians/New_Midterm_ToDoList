@@ -4,7 +4,7 @@ using ToDo.Domain;
 
 namespace ToDo.Repository
 {
-    public class ToDoRepository
+    public class ToDoRepository : IToDoRepository
     {
         private readonly List<Domain.ToDo> _todos = new List<Domain.ToDo> ();
         private int _nextId = 1;
