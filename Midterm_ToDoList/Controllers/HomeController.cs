@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Midterm_ToDoList.Models;
 using System.Diagnostics;
 
+//test master rebase
+
 namespace Midterm_ToDoList.Controllers
 {
     public class HomeController : Controller
